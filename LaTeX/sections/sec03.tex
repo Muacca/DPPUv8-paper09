@@ -1,0 +1,53 @@
+\section{Morse indices at a finite outer boundary}\label{sec:morse}
+The bosonic index counts negative directions of the real gauge-invariant quadratic form, with the induced outer metric fixed. We specify the integration variable, parity at the reflection surface and outer ensemble before forming this Hessian. A real three-form $H$ has Euclidean norm term $\|H\|^2/(4C)$ and Fourier term $i\int\dd\theta\wedge H$. Completing the square in $H$ gives $+C\|\dd\theta\|^2$ for the scalar. Integrating $\theta$ first imposes $\dd H=0$. On a collar with $P\ne0$ write $H=P\omega_Y+\dd b$ with $\int_Y\omega_Y=1$. A single-valued two-form potential accounts only for the exact part. We hold $H$ fixed in ensemble E1 and remove $i\int_{\partial M}\theta H$ there. In E2 the conjugate field is fixed, and we integrate the harmonic flux over $\mathbb R$ with its Fourier kernel. A quantized flux summed over distinct bundles has different tangent data.
+
+\begin{proposition}\label{prop:hom}
+On the real three-form contour the homogeneous index for E1 is zero. For E2 at each finite $R>q_*$ there is one negative even direction and no negative odd direction. The Hessian of the infinite-boundary action has zero negative index.
+\end{proposition}
+\begin{proof}
+The equation $\dd H=0$ constrains $P$ to one constant. At fixed $P$ the pair consisting of the scale factor and its momentum is removed by the lapse constraint and time reparametrization. In proper time the residual radial perturbation is $\delta q=\dot q\,\xi,\ \delta N=\dot\xi$. Linearizing the constraint \emph{at} the throat gives $\delta q(0)=0$ at fixed $P$, or $2q_*\delta q(0)=\delta a$ for varying flux. The odd displacement of the reflection surface is an interior coordinate translation of the smooth double. Thus no physical homogeneous radial oscillator remains at fixed flux.
+
+For E2 first solve the metric and lapse problem at fixed $P$. The Fourier source in $\int\dd P\,e^{-iP\Delta\theta/\hbar}e^{-I_P/\hbar}$ has zero second derivative. The endpoint source must be analytically continued to the value compatible with the desired nonzero real saddle. Differentiating \eqref{eq:principal} at fixed $R$ on one sign branch gives
+\begin{equation}
+ I_{P,aa}= -\frac{A_0}{\sqrt{R^4-a^2}},\qquad
+ \frac{\dd^2 I_P}{\dd P^2}=-\frac{A_0d}{36V^2\sqrt{R^4-a^2}} .
+ \label{eq:fluxhess}
+\end{equation}
+The constant $\delta P$ is even. Its negative coefficient tends to zero as $R^{-2}$. The limiting action is linear in $|P|$ and the matched Fourier source leaves a flat direction on the chosen sign branch. The finite-radius index remains one for every finite radius.
+\end{proof}
+
+\paragraph{Nonconstant harmonics.}
+Let $n$ denote scalar harmonic degree on the round cover, $k=n(n+2)$ and $j=k-3$. For $n\ge2$, normalize the flux variable $Q$ of \cite{MM} by $Q^2=6a^2$. Write $H_q=q'/q$, $D=3Q^2+2jq^4$. The regular gauge-invariant scalar amplitude $\mathcal R$ and its conjugate momentum have the first-order action with coefficients
+\begin{equation}
+ A_n=-\frac{kD}{4q^2j},\qquad
+ B_n=\frac{q^2j(2jq^4-Q^2)}{D^2},\qquad p=\frac{q^2j}{kD}.
+ \label{eq:weights}
+\end{equation}
+The imaginary momentum Gaussian leaves the real configuration form $\int(p\mathcal R'^2+B_n\mathcal R^2)\dd t$. The variable is regular at the throat since $D>0$. The factor $2jq^4-Q^2$ is at least $4a^2$. In E1 the outer boundary value vanishes, so this form is positive. In E2 the residual boundary term is $-b_T\mathcal R(T)^2$ where
+\begin{equation}
+ b_T=\frac{Q^2}{2 H_q(T) q(T)^2D(T)} > 0 .
+ \label{eq:robin}
+\end{equation}
+The natural boundary condition is $p\mathcal R'(T)=b_T\mathcal R(T)$. At the throat, even fields have natural Neumann data and odd fields have Dirichlet data. Appendix~\ref{app:robin} derives the boundary form and its one-dimensional sign test. The degeneracy of $j=0$ at $n=1$ expresses a scalar gauge mode. The two metric scalar tensors there are dependent. The remaining constraints remove the boundary term with either ensemble. Transverse vectors have no vorticity source, and the shift removes the non-Killing components. Tensor harmonics have form proportional to $\int q^2(v'^2+n(n+2)v^2)\dd t$; quotient projection only reduces their multiplicity.
+
+\begin{table}[htbp]\centering
+\begin{tabular}{lrrrr}
+\toprule
+$Y$ & $d_2,d_3,d_4$ & E2 even at $1.1$ & E2 odd at $1.1$ & E2 at $\ge1.5$\\
+\midrule
+$S^3$ & $9,16,25$ & 51 & 25 & $1,0$\\
+$\mathbb{RP}^3$ & $9,0,25$ & 35 & 9 & $1,0$\\
+left $C_3$ & $3,8,5$ & 17 & 11 & $1,0$\\
+$L(5,2)$ & $1,4,5$ & 11 & 5 & $1,0$\\
+$L(7,2)$ & $1,2,3$ & 7 & 3 & $1,0$\\
+left $2I$ & $0,0,0$ & 1 & 0 & $1,0$\\
+\bottomrule
+\end{tabular}
+\caption{Total real bosonic indices at the indicated finite $R/q_*$. The last column gives even, odd. At $1.1$ the inhomogeneous even contribution is $d_2+d_3+d_4$, the odd contribution $d_2+d_3$. All E1 indices vanish. The strict infinite-end E2 index is $(0,0)$.}
+\label{tab:morse}
+\end{table}
+
+The sign of the scalar field fluctuation by itself cannot replace this specification. The background scalar velocity is imaginary. A time reparametrization mixes a scalar perturbation with lapse and metric perturbations. In an interior interval, one can take a compactly supported transverse metric perturbation and a compensating longitudinal perturbation so that $\delta\theta=0$; the reduced conformal kinetic term is then negative on real transverse data. Rotating only the transverse coordinate reverses this sign. Appendix~\ref{app:robin} gives the explicit variables. Fixing a real plane on a regular gauge slice answers a different question from integrating the real three-form.
+
+\paragraph{A second positive-curvature example.}
+On $S^2\times S^1$ and its free dihedral quotient $\mathbb{RP}^3\#\mathbb{RP}^3$, a time-symmetric solution has circle scale $b_R$ and spherical scale $\sqrt{\tau^2+a_*^2}$. Its homogeneous E1 and E2 indices are those of Proposition~\ref{prop:hom}. All six lifts have an axial shift strictly within the throat gap, including the two connected-sum lifts with nonzero eta invariant. Appendix~\ref{app:ks} derives these assertions. Inhomogeneous stability of these two geometries requires a separate reduction.

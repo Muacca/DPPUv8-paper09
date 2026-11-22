@@ -1,0 +1,19 @@
+\section{A threshold prescription on the half-line}\label{app:jost}
+Fix an angular eigenvalue $\lambda$. Choose a proper-distance origin at infinity so that $q=r+O(r^{-3})$. From the radial constraint and \eqref{eq:X},
+\[
+ b_s=\lambda/r+O_\lambda(r^{-3}),\qquad
+ b_s^2-b_s'=\lambda(\lambda+1)r^{-2}+U_s(r),\qquad U_s=O_\lambda(r^{-4}).
+\]
+At energy $-\epsilon^2<0$ choose the solution normalized by decay relative to the inverse-square reference. For $\nu=|\lambda+1/2|\ge1$ the decaying reference solution is
+\[
+ \Phi_\epsilon(r)=\frac{\epsilon^\nu\sqrt r\,K_\nu(\epsilon r)}
+                         {2^{\nu-1}\Gamma(\nu)} .
+\]
+As $\epsilon\downarrow0$ this tends pointwise to $r^{1/2-\nu}$. Variation of parameters for the ratio to $\Phi_\epsilon$ gives a Volterra kernel bounded in absolute value for $y\ge r$ by
+\[
+ |U_s(y)|\,\Phi_\epsilon(y)^2\int_r^y\Phi_\epsilon(v)^{-2}\dd v
+ \ \le\ |U_s(y)|\,y/(2\nu).
+\]
+Indeed $x^\nu K_\nu(x)$ decreases, giving $\Phi_\epsilon(y)^2/\Phi_\epsilon(v)^2\le(y/v)^{1-2\nu}$. The integrable majorant yields dominated convergence of the Volterra series. On a fixed compact radius interval one also controls the first derivative by differentiating the lower limit and using continuous dependence of the initial value problem. This proof includes the negative lowest shell with $\nu=1$; it gives no uniform bound as angular momentum tends to infinity.
+
+For $\lambda>0$ the zero-energy subordinate solution is $e^{-B_s}$, where $B_s=\lambda t-s\int_0^tX_E\dd t$. Normalization of its asymptotic coefficient contributes $e^{-sJ_\infty}$ up to a common factor. Its Dirichlet Jost value at the throat has branch ratio $e^{-2J_\infty}$. For $\lambda<0$ use $e^{-B_s(\tau)}\int_\tau^\infty e^{2B_s(v)}\dd v$. Its asymptotic coefficient is proportional to $e^{-sJ_\infty}$, so the normalization contributes $e^{sJ_\infty}$. Its throat Robin derivative $A_s f(0)$ has nonzero common sign and ratio $e^{2J_\infty}$. Taking the angular Abel sum of the log ratios now yields $-2J_\infty\eta_0$. The coordinate-independent comparison fixes the same exterior normalization for the two branches of each shell. No exchange of an all-shell limit with the Jost threshold has been used.

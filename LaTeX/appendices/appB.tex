@@ -1,0 +1,33 @@
+\section{Robin test, angular comparison and scalar contours}\label{app:robin}
+For $n\ge2$ use the scalar harmonic variables of Eqs.~(3.9)--(3.22) of \cite{MM}, with their harmonic number $n+1$. Closure of the nonconstant flux gives $f'=-kw$, and the scalar metric shear can be set to $E=0$. The invariant amplitude is $\mathcal R=f-Q\Delta E$. The shift imposes $\Pi_E=-Q\Delta\Pi_f$. The lapse equation solves for the regular metric potential $\psi=-(H_q q^2\Pi_\psi+Q\mathcal R)/D$. In terms of $\Pi=\Pi_f-Q\Pi_\psi/D$, the unintegrated outer canonical term is
+\[
+ \psi\Pi_\psi+\frac{q^2 H_q\Pi_\psi^2+2Q\Pi_\psi\mathcal R}{2D}.
+\]
+At E1, $\psi=\mathcal R=0$ implies $\Pi_\psi=0$. At E2 transform the boundary polarization by $-\Pi_f f$ and impose $\psi=\Pi_f=0$. Then $\Pi(T)=2b_T\mathcal R(T)$ and the remaining action term is $-b_T\mathcal R(T)^2$. Integrating a momentum time slice $\Pi=i\xi$ produces a positive Gaussian times $\exp[-(\Delta\mathcal R)^2/(4|\!A_n\!|\epsilon)]$. The natural Robin condition follows from varying the real configuration endpoint after this integration. There is no independent boundary oscillator at the smooth reflection surface.
+
+Let $y$ solve $(py')'=B_n y$ with even initial data $(y,py')(0)=(1,0)$ or odd data $(0,1)$. Then $y,py'>0$ on $t>0$. For any admissible perturbation write $\mathcal R=\mathcal R(T)y/y(T)+u$ with $u(T)=0$. Integration by parts eliminates the cross term and gives
+\[
+ \mathcal Q_2=\int_0^T(pu'^2+B_nu^2)\dd t+
+       \big[p(T)y'(T)/y(T)-b_T\big]\mathcal R(T)^2 .
+\]
+Hence the sign of the bracket decides the whole possible difference from E1, including its simple zero. Write $m=py'/y$, put $a=1$ by scaling, and set $x=\cosh(2t)$, $b=3/[(18+2jx^2)\sqrt{x^2-1}]$. The equation $m'=B_n-m^2/p$ gives the exact crossing derivative
+\[
+ \left.(m-b)'\right|_{m=b}
+ =B_n-b'-b^2/p=\frac{j(x^2-1)-3}{2jx(x^2-1)} .
+\]
+Initially $m/b$ tends to $0$ (even) or $2j/(3k)<1$ (odd). An integrating factor for $m-b$ keeps it negative until the numerator above becomes positive; after that it can cross zero only upwards. To order shells, set $z=m/b$. In $z'=B_n/b-(b'/b)z-(b/p)z^2$, the first term and $-b'/b$ increase with $j$ at fixed $x>1$ and $b/p$ decreases. The initial odd limit increases with $j$; the even limit is zero and the ordering follows by comparison from the regular solution at the origin. Thus larger $n$ cannot introduce a negative direction once a lower shell is positive.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule $n$ & Critical $R/q_*$, even & Critical $R/q_*$, odd\\\midrule
+2 & $(1.413463,1.414964)$ & $(1.268809,1.270310)$\\
+3 & $(1.195534,1.197035)$ & $(1.124728,1.126229)$\\
+4 & $(1.116586,1.118087)$ & $(1.073819,1.075320)$\\
+12 & $(1.015053,1.016554)$ & $(1.009276,1.010674)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The enclosures use coefficient bounds on each time step of the Riccati equation and the exact constant-coefficient positive transfer. The upper and lower maps use opposite bounds on $1/p$ because the Riccati quadratic term is negative. For odd data the first transfer starts at positive infinity. The saved enclosures also show both parities positive at $n=5,R/q_*=1.1$. Hence all higher shells there are controlled by comparison. At infinity $b_T\to0$ and the closed positive form gives zero negative index. The quotient multiplicities $d_n$ count invariant scalar harmonics $V_n\otimes V_n$, with the same angular group action as for the spinor table and no spin-lift twist.
+
+\paragraph{Why a scalar phase alone leaves a contour undetermined.}
+Set $x=q^2,\ z=Nq,\ U=\mp 2i\kappa^2(\theta-\theta_*)/\sqrt d$. With the sign chosen for increasing background $U$, change variables to $X=x\cos U,\ Y=x\sin U$. The fixed-field action, up to the outer subtraction, is $-A_0\int[(X'^2+Y'^2)/(4z)+z]\dd t$. At the saddle $\bar X=a,\ \bar Y'=2\bar z$. The linearized lapse constraint removes $\delta Y'-2\delta z$ from the quadratic form. For compactly supported real $f$, take $\delta X=f,\ \delta Y=\tan(\bar U) f,\ \delta z=\delta Y'/2$. This gives $\delta\theta=0$ and $-A_0\int(f')^2/(4\bar z)<0$. Taking the transverse direction imaginary reverses the sign while preserving $\delta\theta=0$ with the adjusted metric variation. This construction makes explicit why an ungauged scalar phase condition alone cannot define a real self-adjoint quadratic form.

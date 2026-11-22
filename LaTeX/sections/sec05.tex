@@ -1,0 +1,59 @@
+\section{Relative Dirac modulus on a collar}\label{sec:det}
+Fix $h\ne0$, a finite $R>q_*$, the oriented lift of $Y$, the same normalization scale on both branches, and the complementary APS domains of Sec.~\ref{sec:states}. Define $\log|\det D_s|=-\frac12\zeta_{D_s^2}'(0)$ for the self-adjoint four-component operator. There are no zero eigenvalues. At $h=0$ the \emph{mixed} domain means the continuous limit from positive $h$: exclude the positive contacting trace in $A_s$, include the negative one. Write $\eta_0(Y)$ for the ordinary eta invariant of $D_0$, with zero modes omitted.
+
+\begin{theorem}\label{thm:det}
+For the fifteen lifts of Table~\ref{tab:eta}, the compact four-dimensional relative log modulus is
+\begin{equation}
+ \Delta_Y=\log|\det D_+|-\log|\det D_-|=-2J\eta_0(Y),\qquad
+ J=\frac{3}{4\sqrt{1+h^2}}\arccos\frac{q_*^2}{R^2}.
+ \label{eq:delta}
+\end{equation}
+The same formula holds in the mixed domain at $h=0$. On the half-line, the prescription which first takes the negative-energy Jost threshold in each shell and subsequently takes the angular Abel sum gives $J_\infty=3\pi/(8\sqrt{1+h^2})$.
+\end{theorem}
+
+\begin{proof}[Compact radial calculation]
+For $\lambda>0$, set $b_s=(\lambda-sX_E)/q$ and $L_s=A_s^*A_s$. Its left condition is $y(0)=0$ and its right condition is $(\partial_\tau+b_s)y=0$. If $B(\tau)=\int_0^\tau b_s(v)\dd v$, the solution of $L_sy=0$ with $y(0)=0,\ y'(0)=1$ is
+\[
+ y(\tau)=e^{-B(\tau)}\int_0^\tau e^{2B(v)}\dd v,\qquad
+ A_sy(\tau)=e^{B(\tau)} .
+\]
+Thus the zeta determinant with these mixed separated conditions is $2e^{B(\tau_R)}$ by the normalized Wronskian formula \cite{LV}. For $\lambda<0$ the Robin condition is at the throat and Dirichlet at the outer end. The normalized Robin solution is $e^{-B}$ and the determinant is $2e^{-B(\tau_R)}$. Since $B(\tau_R)=\lambda T-sJ$, each shell supplies
+\[
+ \log\det L_+-\log\det L_-=-2\,\sgn(\lambda)\,J .
+\]
+The squares on the two chiral blocks have equal nonzero spectra and the factor $1/2$ in the four-component modulus removes the duplication. Direct integration of $X_E$ gives \eqref{eq:delta}. The passage from the shell result to the four-dimensional zeta regularization is proved in Appendix~\ref{app:zeta}. It is important here: an unrestricted sum of separated determinants can differ from a determinant of the direct sum \cite{LVsum}. The half-line statement is proved in Appendix~\ref{app:jost}.
+\end{proof}
+
+\begin{table}[htbp]\centering
+\begin{tabular}{lrrl}
+\toprule
+Oriented lift & Period & $\eta_0(Y)$ & $(m_+,m_-)$\\
+\midrule
+$S^3$ &1&0&$(2,2)$\\
+$\mathbb{RP}^3$, even / odd &2&$1/4,\ -1/4$&$(2,0),(0,2)$\\
+$C_3$, left / right &3&$4/9,\ -4/9$&$(2,0),(0,2)$\\
+$L(5,2)$ &5&0&$(0,0)$\\
+$L(7,2)$, weights $(3,2)$ &7&$4/7$&$(0,0)$\\
+$2T$ &12&$167/144$&$(2,0)$\\
+$2O$, trivial / sign &24&$383/288,\ -49/288$&$(2,0),(0,0)$\\
+$2I$ &60&$1079/720$&$(2,0)$\\
+$Q_8$, trivial &4&$13/16$&$(2,0)$\\
+$Q_8$, each of three nontrivial lifts &4&$-3/16$&$(0,0)$\\
+\bottomrule
+\end{tabular}
+\caption{Angular inputs, with all 15 spin lifts counted separately in the calculation. The period refers to the quasipolynomial difference of the shell multiplicities. For the mirror of the stated $L(7,2)$ orientation one must reverse the sign of $\eta_0$.}
+\label{tab:eta}
+\end{table}
+
+For $L(7,2)$, the $h=0$ answer is $-(6/7)\arccos(a/R^2)$ and neither branch has a contacting shell. Conversely the cover has two contacting spinors of either sign and zero relative modulus in the mixed domain. On the trivial $2I$ lift the magnitude of $\Delta_Y$ is the largest in Table~\ref{tab:eta} for common $h$ and common $R/q_*$. Holding the physical radius and total charge common instead requires checking each quotient's own $a$.
+
+\paragraph{Changing the zero-shell rule at $h=0$.}
+Write $b_{\rm c}=(3/2-X_E)/q$, $I=\int_0^{\tau_R}\exp(-2\int_0^\tau b_{\rm c})\,\dd\tau$, $\mu=q_*^{-1}$. The positive-contact shell with its left trace included has a kernel. The nonzero eigenvalues are those of the adjoint square with both endpoints Dirichlet. Its normalized zero-energy solution at the outer end contributes $e^{\int b_{\rm c}}I$, in place of the mixed value $e^{\int b_{\rm c}}$. Rescaling the Dirichlet determinant introduces $\mu$ since its $\zeta(0)$ is $-1/2$. The complementary case exchanges the roles of the branches. Consequently
+\begin{align}
+ \Delta_{\rm allow}'&=\Delta_{\rm mix}+m_+\log(\mu I),&
+ \Delta_{\rm exclude}'&=\Delta_{\rm mix}-m_-\log(\mu I).
+ \label{eq:contact}
+\end{align}
+Primes here denote omission of zero eigenvalues. An unsaturated fermionic integral in a sector with a kernel vanishes. This distinction matters already on the cover, where the three relative log values become $0,\pm2\log(\mu I)$. At $R/q_*=2,3$, respectively, $\log(\mu I)\simeq-0.0324283,0.1584371$.
+
+The ordinary four-component modulus ratio is $\exp\Delta_Y$. A convention which assigns each branch half its log modulus gives a ratio $\exp(\Delta_Y/2)$. Neither result fixes a contour coefficient for that gravitational saddle. The shell-first half-line expression determines a relative number with a stated order of limits; the individual absolute four-dimensional determinants and the full noncompact Fredholm determinant require further analysis.

@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,array,graphicx}
+\usepackage[margin=27mm]{geometry}
+\usepackage[colorlinks=true,allcolors=blue!45!black]{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlength{\emergencystretch}{1.6em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\sech}{\operatorname{sech}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\tr}{\operatorname{Tr}}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\vol}{\operatorname{vol}}
+\hypersetup{pdftitle={Fermions at spherical throats of fixed-charge Nieh--Yan semi-wormholes},pdfauthor={Muacca},pdfsubject={Version 1, first release 2026-11-22}}
+\title{Fermions at spherical throats of fixed-charge Nieh--Yan semi-wormholes}
+\author{Muacca}
+\date{Version 1\\First release: 2026-11-22}
+\begin{document}
+\maketitle
+\begin{abstract}
+A round Euclidean axion throat can carry the same classical action on both flux branches while supporting different fermion states. We consider the part of the Giddings--Strominger solution from its reflection surface to a finite boundary, with spatial section a spin spherical space form. For a massless test Weyl field the outer Atiyah--Patodi--Singer vacuum and the instantaneous Lorentzian vacuum prepared just across the first level crossing have a finite-rank covariance difference. Its trace is $s m_s$, where $s$ is the sign of the Nieh--Yan charge and $m_s$ counts the lifted Killing spinors in the contacting shell. A constant real Holst term separates the crossing from the throat; preparation between them gives zero difference. On the corresponding finite collar the relative four-component Dirac log modulus is $-2J\eta_Y(0)$ for fifteen spin lifts, with $J$ the integrated axial shift. We give the boundary domain and the order of limits for a shellwise extension to infinity. On the real three-form contour the fixed-flux bosonic Hessian has zero negative index. Integrating a continuous flux at fixed outer field adds one homogeneous even negative direction at finite radius and a Robin contribution on short collars. These are conditional state, determinant and stability comparisons for specified boundary experiments.
+\end{abstract}
+\begingroup\small\tableofcontents\endgroup
+\input{sections/sec01}
+\input{sections/sec02}
+\input{sections/sec03}
+\input{sections/sec04}
+\input{sections/sec05}
+\input{sections/sec06}
+\input{sections/sec07}
+\section*{Availability}
+The accompanying repository contains the angular projections, relative moduli, Robin index checks and the source of Fig.~\ref{fig:throat}. Appendix~\ref{app:checks} describes independent checks of the tabulated quantities.
+\section*{Acknowledgments}
+The author acknowledges Claude Opus 5.5, Gemini 4 Neon and GPT Astra 6.2 for assistance during preparation of the manuscript in November 2026, including symbolic derivations, implementation, Japanese--English exposition and deterministic figure-generation code. The calculations and figures are reproducible from the supplied mathematical definitions and data. The author takes responsibility for the content and remaining errors.
+
+This work was developed within the informal collaborative project \textbf{DPPU} (\textbf{D}onut-like topology, \textbf{P}lanck-scale compactness, \textbf{P}recession dynamics, \textbf{U}niverse).
+\appendix
+\input{appendices/appA}
+\input{appendices/appB}
+\input{appendices/appC}
+\input{appendices/appD}
+\input{appendices/appE}
+\input{appendices/appF}
+\input{references}
+\end{document}

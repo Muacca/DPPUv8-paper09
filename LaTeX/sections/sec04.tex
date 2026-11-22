@@ -1,0 +1,51 @@
+\section{Throat traces and occupied fermions}\label{sec:states}
+Use an external massless Hermitian Dirac action with spatial Clifford matrices $c_i=-i\sigma_i$. Its symmetrized connection coupling contains $\{\gamma^c,\gamma^{ab}\}$ and retains only completely antisymmetric torsion. The vector trace proportional to $h$ drops out. In the orientation of Paper~08 the induced axial shift is $-3j/2$. Factor out the volume by $f=q^{3/2}\psi$. The intrinsic operator on the unit section is $D_0$ with eigenvalues $\lambda=\pm(k+3/2)$, $k\ge0$, subject to the spin-lift projection. Set
+\begin{equation}
+ B_s=D_0-sX,\qquad X_*=\frac{3}{2\sqrt d},\quad
+ X_E(t)=X_*\sech(2t),\quad X_L(u)=X_*/\sin(2u).
+ \label{eq:X}
+\end{equation}
+After the unitary half-density transformation the Euclidean Weyl blocks in proper distance are $A_s=\partial_\tau+B_s/q$ and $A_s^*=-\partial_\tau+B_s/q$. The Green pairing is the outer trace minus the throat trace. The sign of the outer normal requires opposite APS trace selections at the two ends: $A_s$ allows negative eigenspaces of $B_s$ at the throat, positive eigenspaces at the outer end. Its adjoint allows the complements, as required by the Green pairing for spectral boundary data \cite{BB}. If $h=0$, the throat zero eigenspace can be included or excluded from the domain of $A_s$. We use complex dimensions throughout.
+
+Let $m_s=\dim\ker(D_0-3s/2)$. An exact shell solution is proportional to $\exp[\mp(\lambda t-s\int_0^t X_E\,\dd t)]$ and never changes from zero to nonzero. Thus only a contacting shell can satisfy both chiral endpoint conditions at finite radius. Write $e=+1$ for allowing its zero trace and $e=-1$ for excluding it. Then
+\begin{equation}
+ \ind A_s=\tfrac12(s+e)m_s .
+ \label{eq:index}
+\end{equation}
+For $s=+1,e=+1$ there are $m_+$ positive chiral zero modes; for $s=-1,e=-1$ there are $m_-$ adjoint zero modes. All other kernel dimensions vanish. Applying a single rule to both branches already distinguishes the left and right order-three quotients. The smooth doubled collar with identical even $X_E$ and complementary conditions at its two outer boundaries has zero kernels of both chiralities on both branches: each separated solution is forced to vanish at one end.
+
+\begin{theorem}\label{thm:fermions}
+Let the outer boundary be in its APS vacuum in the Hamiltonian interpretation of \cite{KY} and choose the negative-energy instantaneous Lorentzian vacuum of the positive Weyl block in the first crossing window $3/2<X_L<5/2$. Transport the bra and ket to the reflection surface in the same tangent frame. Then
+\[
+ C_L-C_E=sP_{D_0=3s/2},\qquad N_L-N_E=s\,m_s .
+\]
+For a four-component field the vector number difference is zero and the axial difference is $2s m_s$. At $h\ne0$, preparation in the intervening throat-adjacent window $X_L<3/2$ gives zero differences in both chiralities.
+\end{theorem}
+\begin{proof}
+All time-dependent Hamiltonians on a Weyl component commute. The Euclidean evolution of one oscillator with occupation $n=0,1$ is
+\[
+ U_\lambda=\exp[-(\lambda T-sJ)(n-\tfrac12)],\quad
+ J=\int_0^T X_E(t)\,\dd t .
+\]
+A positive outer eigenvalue permits the $A_s$ trace and imposes zero on the adjoint trace. In the terminal coherent-state kernel $e^{(\lambda T-sJ)/2}(1+\bar\eta_T e^{-(\lambda T-sJ)}\eta_0)$ the constant coefficient is the empty bra and the linear coefficient is the filled bra. Thus the normalized Euclidean covariance at the throat is $C_E=1_{D_0<0}$. Even for $h=0$, $\lambda-sX_E=3s t^2+O(t^4)$ on the contacting shell. Evolution through $t=0$ is regular. The statement about infinitely many oscillators uses their one-particle covariance, so no infinite vacuum normalization is needed.
+
+Lorentzian evolution multiplies each occupation vector by a phase. In the chosen window the only changed signs relative to $D_0$ are the ones at $\lambda=3s/2$, whenever that shell survives. Positive $s$ changes its occupation from $0$ to $1$, negative $s$ from $1$ to $0$. The opposite Weyl block has Hamiltonian $-B_s$ and complementary covariance. Taking the trace, sum and difference of the two finite-rank changes proves the number statements.
+\end{proof}
+
+\begin{table}[htbp]\centering
+\begin{tabular}{lccc}
+\toprule
+Lift & $(m_+,m_-)$ & Weyl $\Delta N$, branches $+,-$ & Dirac axial $\Delta N$\\
+\midrule
+cover & $(2,2)$ & $(2,-2)$ & $(4,-4)$\\
+$\mathbb{RP}^3$ even, left $C_3$, left $2I$ & $(2,0)$ & $(2,0)$ & $(4,0)$\\
+$\mathbb{RP}^3$ odd, right $C_3$ & $(0,2)$ & $(0,-2)$ & $(0,-4)$\\
+$L(5,2)$, $L(7,2)$ & $(0,0)$ & $(0,0)$ & $(0,0)$\\
+\bottomrule
+\end{tabular}
+\caption{First crossing window for the eight specified lifts. In the adjacent window at nonzero $h$ all differences vanish. The eigenvalue signs refer to the oriented unit section.}
+\end{table}
+
+On the expanding branch a shell of magnitude $K=k+3/2$ crosses at $u_k=\frac12\arcsin(X_*/K)$ if present. In particular $\pi/4-u_0=\frac12\arctan|h|$. The distance quoted is the width of the window in conformal time. For $u_0<u<\pi/4$ the lowest positive and negative signs agree with the Euclidean preparation. For $u_j<u<u_{j-1}$ the difference is $s\sum_{k<j}P_{D_0=s(k+3/2)}$. At exactly a zero eigenvalue the occupation must be specified. The limit $h\to0$ taken at fixed first-window preparation recovers the touching-shell answer. A preparation kept inside the shrinking adjacent window has zero difference at every nonzero $h$.
+
+The relative integer in Theorem~\ref{thm:fermions} requires $m_s$ fundamental insertions between the Weyl vacua and $2m_s$ between the Dirac vacua. Each ladder operator changes one bit in the occupation basis. In $\langle E|O|L\rangle$ the inserted operator carries number $-\Delta N$. A nonzero number of required insertions implies zero overlap without them. This outcome describes a comparison of preparations in decoupled oscillators; the evolved occupation of each individual oscillator is constant.

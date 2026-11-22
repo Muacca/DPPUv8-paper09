@@ -1,0 +1,9 @@
+# What the data verify
+
+**Exact discrete results.** Angular dimensions use modular weights or Ramanujan sums with rational arithmetic. The generating-function numerator has a triple zero at one for all fifteen lifts. Its third derivative gives the angular Abel value. The program also rebuilds the quasipolynomial coefficients on every residue class and compares them with reference/shells.json. The finite-rank Weyl number in each preparation window follows from the integer number of occupied oscillators.
+
+**Rigorous signs.** The eight outer-radius enclosures are checked at the two bracket endpoints by interval arithmetic. For total degeneracy counts the signs at radius ratio 1.1 are computed through degree five, and at 1.5 at degree two. The comparison argument in Appendix B controls higher shells and larger radii. The table includes a continuous even harmonic flux in the fixed-field ensemble.
+
+**Floating-point quantities.** Relative moduli and contact corrections are ordinary floating-point evaluations of proved formulas. A separate numerical quadrature checks the radial exponent against the exact expression for each specified coupling and cutoff. At finite cutoff an independent second-order shooting computation confirms 32 positive- and negative-shell Wronskian ratios. These floating-point values carry no interval accuracy claim. The five-dimensional phase and infinite angular and Jost limits use the analytic arguments in the manuscript.
+
+**Extent.** The full determinant result concerns a finite collar and specified complementary domains. At zero Holst coupling the displayed unprimed formula uses the mixed contact domain. For the half-line the Jost threshold is taken shell by shell before the angular Abel limit. The manuscript does not compute an absolute determinant on either branch. The Kantowski–Sachs fluctuation index covers homogeneous perturbations only.
